@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
 }
 
 header {
@@ -127,6 +128,16 @@ nav button {
   color: #f4f4f4;
 }
 
+.page-1-btn .btn-2:hover {
+  background-color: rgba(245, 245, 245, 0.5);
+  color: #333;
+}
+
+.page-1-btn .btn-1:hover {
+  background-color: #333;
+  color: #a1a1a1;
+}
+
 .left-below {
   display: flex;
   justify-content: space-between;
@@ -163,11 +174,9 @@ nav button {
   overflow: hidden;
 }
 
-.hero-img:hover .img {
+.hero-img:hover img {
+  transition: all 300ms ease-in-out;
   transform: scale(1.2);
-  transition-property: all;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 300ms;
 }
 
 .social {
@@ -188,4 +197,92 @@ nav button {
   color: #dfdfdf;
   align-items: start;
   font-size: 0.9rem;
+}
+
+/* page-2 */
+.page-2 {
+  height: 100vh;
+  background-color: rgba(244, 244, 244, 1);
+}
+
+.page-2-cont {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.page-2-left {
+  display: flex;
+  column-gap: 1rem;
+  /* transform: translateX(-5rem); */
+}
+
+.img-satu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  width: 10rem;
+  transition: width 2s;
+}
+
+.img-satu:hover {
+  width: 450px;
+}
+
+.img-dua {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.page-2-right {
+  display: flex;
+  flex-direction: column;
+  padding: 0 4.5rem;
+  row-gap: 1.5rem;
+}
+
+.page-2-right h1 {
+  font-size: 3.7rem;
+  max-width: 30rem;
+  color: #333;
+  line-height: 4.7rem;
+}
+
+.page-2-right p {
+  font-size: 1.2rem;
+  color: #787878;
+  margin-bottom: 1.5rem;
+}
+
+.page-2-btn {
+  display: flex;
+  align-items: center;
+  column-gap: 1rem;
+}
+
+.page-2-btn a {
+  text-decoration: none;
+  padding: 1rem 2rem;
+  color: #dfdfdf;
+}
+
+.page-2-btn .a-1 {
+  background-color: rgba(57, 96, 81, 1);
+}
+
+.page-2-btn .a-1:hover {
+  background-color: #333;
+}
+
+.page-2-btn .a-2 {
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(57, 96, 81, 0.5);
+  color: rgba(57, 96, 81, 1);
+}
+
+.page-2-btn .a-2:hover {
+  background-color: #787878;
+  color: #dfdfdf;
 }
