@@ -172,6 +172,7 @@ nav button {
 .hero-img {
   height: 70%;
   overflow: hidden;
+  display: flex;
 }
 
 .hero-img:hover img {
