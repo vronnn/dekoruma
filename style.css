@@ -290,11 +290,11 @@ nav button {
 }
 
 .page-2-btn .a-1 {
-  background-color: #74948c;
+  background-color: rgba(57, 96, 81, 1);
 }
 
 .page-2-btn .a-1:hover {
-  background-color: rgba(57, 96, 81, 1);
+  background-color: #74948c;
 }
 
 .page-2-btn .a-2 {
